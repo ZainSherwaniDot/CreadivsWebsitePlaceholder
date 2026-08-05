@@ -14,14 +14,14 @@ body {
 
 .container {
   text-align: center;
+  font-style: italic;
 }
 
 img{
   width: 300px;
   aspect-ratio: 1;
-  border-radius: 13px;
   transform: translateY(-14px);
-  animation: questionMarkFloat 3s ease-in-out infinite;
+  animation: questionMarkFloat 5s ease-in-out infinite;
   will-change: transform;
 }
 
