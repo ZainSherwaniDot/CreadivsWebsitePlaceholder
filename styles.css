@@ -20,4 +20,18 @@ img{
   width: 300px;
   aspect-ratio: 1;
   border-radius: 13px;
+  transform: translateY(0);
+  animation: questionMarkFloat 5.8s ease-in-out infinite;
+  will-change: transform;
+}
+
+@keyframes questionMarkFloat {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(14px);
+  }
 }
