@@ -20,7 +20,7 @@ img{
   width: 300px;
   aspect-ratio: 1;
   border-radius: 13px;
-  transform: translateY(0);
+  transform: translateY(-14);
   animation: questionMarkFloat 5.8s ease-in-out infinite;
   will-change: transform;
 }
@@ -28,7 +28,7 @@ img{
 @keyframes questionMarkFloat {
   0%,
   100% {
-    transform: translateY(0);
+    transform: translateY(-14);
   }
 
   50% {
