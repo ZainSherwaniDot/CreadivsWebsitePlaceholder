@@ -21,7 +21,7 @@ img{
   aspect-ratio: 1;
   border-radius: 13px;
   transform: translateY(-14);
-  animation: questionMarkFloat 5.8s ease-in-out infinite;
+  animation: questionMarkFloat 3s ease-in-out infinite;
   will-change: transform;
 }
 
