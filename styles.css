@@ -20,15 +20,15 @@ img{
   width: 300px;
   aspect-ratio: 1;
   border-radius: 13px;
-  transform: translateY(-14);
-  animation: questionMarkFloat 3s ease-in-out infinite;
+  transform: translateY(-14px);
+  animation: questionMarkFloat 2s ease-in-out infinite;
   will-change: transform;
 }
 
 @keyframes questionMarkFloat {
   0%,
   100% {
-    transform: translateY(-14);
+    transform: translateY(-14px);
   }
 
   50% {
