@@ -1,2 +1,2 @@
 Temporary website for [Creadivs.com](https://Creadivs.com).  
-Real website coming soon (if God wills it)!
+Hang on tight for the actual website!
