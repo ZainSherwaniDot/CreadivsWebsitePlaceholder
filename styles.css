@@ -15,6 +15,13 @@ body {
 .container {
   text-align: center;
   font-style: italic;
+  position: relative;
+}
+
+.tempLink {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
 }
 
 img{
