@@ -1,9 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
 html, body {
   margin: 0;
   padding: 0;
   min-height: 100dvh;
-  background-color: #f4f4f4;
-  font-family: Arial, sans-serif;
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
 }
 
 body {
@@ -12,24 +15,58 @@ body {
   place-content: center;
 }
 
+:root{
+  --clrDarkBlue: #0a253e;
+  --clrLightBlue: #007db4;
+  --clrWhite: #f4f4f4;
+}
+#loading{
+  min-height: 100dvh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+}
+.load{
+  height: 100dvh;
+  width: 100dvw;
+  position: absolute;
+  transition: all 0.7s cubic-bezier(.79,.14,.15,.86);
+}
+.dar{
+  background-color: var(--clrDarkBlue);
+  top: 0;
+  left: 0;
+  clip-path: polygon(100% 100%, 0% 100%, 100% 0);
+}
+.lig{
+  background-color: var(--clrLightBlue);
+  bottom: 0;
+  right: 0;
+  clip-path: polygon(0 0, 0% 100%, 100% 0);
+}
+
 .container {
   text-align: center;
-  font-style: italic;
 }
 
 .tempLink {
+  font-style: italic;
   position: absolute;
   bottom: 10px;
   right: 10px;
-  color: #0a253e;
+  color: var(--clrLightBlue);
   &:hover{
-    color: #007db4;
+    color: var(--clrWhite);
   }
 }
 
-img{
-  width: 300px;
-  aspect-ratio: 1;
+p{
+  font-size: 300px;
+  color: var(--clrWhite);
   transform: translateY(-14px);
   animation: questionMarkFloat 7s ease-in-out infinite;
   will-change: transform;
